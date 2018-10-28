@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.AboutDevPage"
+             Title="About Developers">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Hello World" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        
+                        <Image Source="ashesh" VerticalOptions="Center"  HorizontalOptions="Center"/>
+                        <Label Text="Ashesh Shretha" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+                                                                         
+                        <Image Source="saurav" VerticalOptions="Center"  HorizontalOptions="Center"/>
+                        <Label Text="Saurav Maharjan" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="sangam" VerticalOptions="Center"  HorizontalOptions="Center"/>
+                        <Label Text="Sangam Adhikari" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Button Text="Github" Clicked="Button_Clicked" BorderRadius="5" BackgroundColor="Teal" TextColor="White"/>
+
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Label Text="Internation Student:AU" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Text="MIT License" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Text="Copyright (c) 2018 Not Yet" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+
+                   </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

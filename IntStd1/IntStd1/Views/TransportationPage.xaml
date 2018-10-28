@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.TransportationPage"
+            Title="Transportation">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Transportation Details" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Image Source="transportation" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+
+                        </Image>
+
+                        <Label Text="Australia has a wide variety of means of transportation. The most used means of transportation is Train. Trains are one of the reliable and most used transportation,
+Buses and Light rails are also available. In Sydney, Opal card is used to pay the transportation fare whereas in Melbourne, MyKi is used to pay the fare. It differs ranging 
+from the State. Different state have different transportation name and differnt travel card. Third party means of transportation like Uber, 13cabs exists which can be used when
+in Urgent as they are quick however cost you a little more money than the other." 
+                                LineBreakMode="WordWrap"
+                                
+                                HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+
+
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+                        <Image Source="sydneytrains" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Sydney Trains" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <!--Sydney Trains Finishes here-->
+
+
+
+
+
+
+                        <Image Source="MelbourneMetro" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Melbourne Metro" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="Uber" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Uber" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="thirteencabs" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="13Cabs" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+
+
+
+
+
+
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

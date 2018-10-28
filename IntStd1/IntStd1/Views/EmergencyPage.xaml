@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.EmergencyPage"
+             Title="Emergency">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Prepare Yourself" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Image Source="emergency" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+
+                        </Image>
+
+                        <Label Text="Life is uncertain. And there is no-one who can predict what happens next. So one has to be prepared to handle the emergency situations.If you're in a situation where you or someone you
+ know is in danger, it's important that you first call emergency services. If the person you are with is unconscious, there are certain things you should look out for. Similarly, if someone
+ has self-harmed, you'll need to keep some additional things in mind. In Australia one can dial 000 from their phone and and report emergency. If you ever felt lonely,
+you feel pressurized with the study or the work load, talk to someone regarding it. Talk to the student advisor or to the Uni if you are feeling not good or you might be having a hard times maintaining your work and study life. Email might be a good medium or even book an appointment. At least talk to someone regarding your problems." 
+                               LineBreakMode="WordWrap"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Button Text="Call Emergency" Clicked="Button_Clicked" BorderRadius="5" BackgroundColor="Teal" TextColor="White"/>
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

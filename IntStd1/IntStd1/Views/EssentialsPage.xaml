@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.EssentialsPage"
+             Title="Essentials">
+    <ContentPage.Content>
+        <!--<StackLayout>
+            <Label Text="Welcome to Essentials Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>-->
+
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Get a SIM Card" FontAttributes="Bold" FontSize="Medium"/>
+                        
+                        <Image Source="sim" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+                            
+                        </Image>
+
+                        <Label Text="SIM card is the first thing you want to buy so that you can start calling and texting your friends. This also let's you 
+have internet connection on the go so you won't lost in the middle of nowhere. There are many SIM providers in Australia, 
+for e.g. Vodafone, Optus, Telstra etc. Go online and search which provider will suit you as they have different plans.
+Find the best plan and even add a phone into it if you current phone is not so smart." 
+                                LineBreakMode="WordWrap"
+                                HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+                
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Open a Bank Account" FontAttributes="Bold" FontSize="Medium"/>
+                        <Image Source="bank" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+
+                        </Image>
+                        <Label Text="
+Open a bank account so you can deposit the cash/cheques you have brought from your home country. Signing up for a bank
+account will help you to get a bank card so you can start paying through it. Make sure to choose the bank that has their Branches near to where you live
+so that it will be easier to visit them when in trouble. Banks like Commonwealth, ST. George, ANZ are one of the leading bank here in Australia." 
+                               LineBreakMode="WordWrap"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Buy a Transportation Card" FontAttributes="Bold" FontSize="Medium"/>
+                        <Image Source="opal" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+
+                        </Image>
+                        <Label Text="You will need to travel a lot, so you need to get a valid transportation card. There are different card in different state of Australia. Transportation card
+in Sydney are called Opal whereas in Melbourne there is Myki. So buy a travel card from one of the nearest store and make sure to top up with plenty of funds in it
+and don't forget to Tap On and Tap Off everytime you get on and off the train/bus." 
+                               LineBreakMode="WordWrap"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

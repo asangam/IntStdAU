@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.JobsPage"
+             Title="Jobs">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Find a Job" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Image Source="jobs" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+
+                        </Image>
+
+                        <Label Text="Make yourself busy in free time and even earn a pocket money for your personal expense while living in Australia. Austrlia has thousands of job listing every day.
+Find the job that suits you or find something where you are skilled at. Make sure to make a TFN(Tax File Number) after then you can start working in Australia bein on
+Student Visa. Don't forget the hours limitation that you are allowed to work in Australia as an Internation Student. An Internation Student are allowed to work
+40hrs a fortnight. Gumtree is one of the very popular mobile application that allows you to search Job listing near you. Other than, Seek, Jora, Indeed are the appplication
+that will let you search job in Australia." 
+                                LineBreakMode="WordWrap"
+                                
+                                HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+
+
+
+
+
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+                        <Image Source="gumtreejobs" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Gumtree Jobs" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="IndeedJobs" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Indeed Jobs" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="SeekJobs" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Seek Jobs" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

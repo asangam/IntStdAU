@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Droid.Dashboard"
+             Title="Home">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Drawing"
+                       Grid.Row="0"
+                       Aspect="AspectFill"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="StartAndExpand"></Image>
+            <Frame CornerRadius="10" BackgroundColor="White" Grid.RowSpan="2" Margin="20,150,20,20">
+                <Grid RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Welcome to Australia!" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" VerticalTextAlignment="Center" TextColor="Black" Grid.Row="0"/>
+                    <BoxView Grid.Row="1" HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+                    <Label Text="Now you are already in Australia there are lot of things that you have to take care of and follow. That no where means you are restricted to enjoy and travel. There are various place that you may want to go,
+travel and visit. This application has all the details of what should you do and what not to do here in Australia
+for International students. Coming to a different country with different lifestyle, primary language 
+and maintaining your lifestyle according to its norms and values is not easy. We as an international student might
+face a lot of difficulties and problems here in Australia. By meaning this we nowhere mean or are trying to say that
+Australia itself arises problem or is not suitable for international students. Australia itself is a beautiful
+country and indeed a land of dreams. Explore yourself, learn, study, work hard, make your dreams come true, get back to your country
+and implement things there that you saw here. There are various things in Australia that you can take as an example for 
+inspiration." 
+                           
+                           
+                    
+                     HorizontalOptions="FillAndExpand" FontSize="14.5" TextColor="Black" Grid.Row="2"/>
+                    <BoxView Grid.Row="3" HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+                    <Grid Grid.Row="4">
+                        <Label Text="All the best!"
+                                   FontSize="Medium"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="FillAndExpand"
+                                   HorizontalTextAlignment="Center"
+                               TextColor="Black"/>
+                    </Grid>
+                    <Button Grid.Row="5" Text="Explore!" TextColor="WhiteSmoke" BackgroundColor="Teal" BorderRadius="2" Clicked="Button_Clicked"/>
+                    
+                </Grid> 
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>

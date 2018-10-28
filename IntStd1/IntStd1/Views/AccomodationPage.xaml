@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.AccomodationPage"
+             Title="Accomodation">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Place to Stay" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Image Source="accomodations" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+
+                        </Image>
+
+                        <Label Text="If you already don't have someone you know here in Australia  you are going to need Accomodation for you. Choose a place/city where you want to stay during your time in 
+Australia. Living in Australia is expensive but that does not mean one have to pay a lot to get a room for theirself. There are different ways you can find rooms here in Australia.
+Websites like FlatMateFinders, EasyRoomMate, FlatMates will help you find room in Australia. These days even rooms are listed in Facebook Marketplace and Gumtree which is one of the
+most popular application here in Australia. If you don't mind sharing a room with other international student living in Australia this can be one of the cheaper way to pay room rent.
+Also it is one of the wise decision to consult with in-campus acccomodation if you don't want the hassle of going through the room finding process." 
+                                LineBreakMode="WordWrap"
+                                
+                                HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+
+
+
+
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+                        <Image Source="easyroommates" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="EasyRoomMates" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+                        <Image Source="flatmatesfinders" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="FlatMatestFinders" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="flatmates" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="FlatMates" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

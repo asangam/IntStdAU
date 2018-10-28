@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntStd1.Views.ShopPage"
+             Title="Places to Shop">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+
+                <Frame BorderColor="Teal" Padding="5" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Go Shopping!" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Image Source="supermarket" 
+                               Aspect="AspectFit"                                
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="StartAndExpand">
+                        </Image>
+
+                        <Label Text="You are going to need a lot of things if this is your first visit to Australia. From cooking Utensils to clothes you will need to buy here if you have not 
+brought from your home country. There are various supermarkets and shopping centres in any of the state in Australia, that let's you shop everything even online. 
+Westfield is one of the popular shopping centre is Australia which has different shopping stores inside it. Woolworths, Coles, Kmart, Target, Aldi, IGA, Myer, BWS are some of the popular shopping centres."
+                               LineBreakMode="WordWrap"
+                                HorizontalOptions="FillAndExpand"
+                               FontSize="Small" />
+                        
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+                        <Image Source="aldi" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Aldi" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="woolworths" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Woolworths" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+                        <Image Source="coles" VerticalOptions="Center"  HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Coles" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <BoxView  HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Silver"/>
+
+
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
